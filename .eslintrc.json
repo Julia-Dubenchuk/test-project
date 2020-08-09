@@ -1,0 +1,70 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "airbnb",
+    "prettier",
+    "plugin:prettier/recommended",
+    "prettier/react",
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly",
+    "window": true,
+    "document": true,
+    "localStorage": true,
+    "FormData": true,
+    "FileReader": true,
+    "Blob": true,
+    "navigator": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["prettier"],
+  "rules": {
+    "max-len": ["error", { "code": 120 }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-props-no-spreading": "off",
+    "no-unused-vars": ["error", { "varsIgnorePattern": "^React$" }],
+    "react/prop-types": 0,
+    "no-underscore-dangle": 0,
+    "import/imports-first": ["error", "absolute-first"],
+    "import/newline-after-import": "error",
+    "import/no-unresolved": "off",
+    "no-prototype-builtins": 0,
+    "func-names": "off",
+    "generator-star-spacing": "off",
+    "no-class-assign": "off",
+    "react/button-has-type": 0,
+    "no-shadow": "off",
+    "react/jsx-wrap-multilines": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "camelcase": "off",
+    "react/prefer-stateless-function": [0, { "ignorePureComponents": true }],
+    "prettier/prettier": ["error"],
+    "no-console": "off",
+    "no-use-before-define": "off",
+    "no-param-reassign": "off",
+    "import/prefer-default-export": "off",
+    "no-return-await": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/label-has-for": "off",
+    "allowShortCircuit": "off",
+    "allowTernary": "off",
+    "no-unused-expressions": "off",
+    "no-restricted-globals": "off",
+    "no-plusplus": "off",
+    "no-nested-ternary": "off",
+    "react/require-default-props": "off",
+    "react/forbid-prop-types": "off"
+  }
+}
